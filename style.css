@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+:root{
+
+}
+* {
+    box-sizing: border-box;
+    font-family: Outfit;
+    font-weight: 300;
+}
+
+body {
+    color: hsl(215, 51%, 70%);
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .img img{
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.img{
+    position: relative;
+}
+.card .img img:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.card .img:hover:before{
+    content: "";
+    width: 298px;
+    height: 298px;
+    background-color: hsl(178, 100%, 50%);  
+    border-radius: 8px;  
+}
+.card .img:hover:after{
+    content: url('images/icon-view.svg');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s
+}
+.card {
+    background-color: hsl(216, 50%, 16%);
+    width: 348px;
+    margin: 30px auto;
+    padding: 25px 25px 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 14px 5px #00000038;;
+}
+
+.card .img{
+    border-radius: 8px;
+    height: 298px;
+    background-color: hsl(178, 100%, 50%);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 20% 20%;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+}
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 0;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+.info li:first-child{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    list-style-image: url('images/icon-ethereum.svg');
+}
+.info li:last-child{
+    list-style-image: url('images/icon-clock.svg');
+    font-weight: 600;
+}
+.foot{
+    border-top: 1px solid hsl(215, 32%, 27%);
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.foot .avatar {
+    width: 30px;
+    border: 1px solid white; 
+    border-radius: 50%;
+}
+
+.cre {
+    padding: 12px;
+    font-weight: 400;
+}
+
+.cre a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.cre a:hover, h2:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    width: fit-content;
+    transition: 0.5s;
+}
